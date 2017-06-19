@@ -1,0 +1,102 @@
+//////////////////FONT
+// @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@fontLightColor: #F2F7F2;
+@fontDarkColor: #F2F7F2;
+@darkBlue: #0B131B;
+@accent: #3ccaf7;
+@accentFolio: #4cb3d3;
+@grey: #dcdcdc;
+@listTitle: #536a81;
+// @titleItem: #00a0d3;
+@titleItem: #5AB1BB;
+@listColor: #1b88ab;
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+header.folio-header {
+    min-height: 59px;
+}
+.folio-header {
+    background: #3C4859;
+    .nav-container {
+        display: flex;
+        align-items: center;
+        .title {
+            margin-right: auto;
+        }
+    }
+}
+
+.folio-wrap {
+    background: #eee;
+}
+
+.folio-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 25px;
+    border-bottom: 2px dashed @listTitle;
+    &:last-child {
+        border-bottom: none;
+    }
+
+    .folio-item-about {
+        min-width: 500px;
+        max-width: 500px;
+        h3 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #00a0d3;
+        }
+        .folio-item-desc {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 24px;
+            color: #1E152A;
+        }
+        h4 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: @listTitle;
+        }
+        ul {
+            margin-bottom: 25px;
+        }
+        li {
+            margin-bottom: 5px;
+            font-size: 18px;
+            list-style-type: disc;
+            list-style-position: inside;
+            color: #00a0d3;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .look {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #1E152A;
+            border-radius: 3px;
+            color: #eee;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background: #2b1f3b;
+            }
+        }
+    }
+
+    .folio-image {
+        max-width: 500px;
+        img {
+            width: 100%;
+            transition: all .35s ease-in-out;
+            &:hover {
+                filter: grayscale(1);
+            }
+        }
+    }
+}
